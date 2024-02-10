@@ -1,0 +1,49 @@
+<div class="bca">
+  <app-nav></app-nav>
+  <div class="top">
+<div class="container">
+    <!-- Content here -->
+   
+        <div class="card w-100">
+            <div class="card-head">
+            <div class="card-header"  >
+                <b>Client Info</b>
+            </div>
+        </div>
+    <table style="width:100%" class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Client Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Modify </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let client of clientinfo; let i=index">
+            <td>{{client.id}}</td>
+            <td>{{client.cname}}</td>
+            <td>{{client.address}}</td>
+          
+            <td>
+                <input type="button" value="Delete" (click)="DeleteClient(i)"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" [(ngModel)]="client.id"/>
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="client.cname"/>
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="client.address"/>
+            </td>
+            <td>
+                <input type="button" value="Add Client" (click)="  AddNewClient()"/>
+            </td>
+        </tbody>
+      </table>
+  </div>
+</div>
+</div>

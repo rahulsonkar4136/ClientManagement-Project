@@ -1,0 +1,28 @@
+.bca
+{
+    background-image: url('https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=600'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: #25c72b;
+    height: 100vh;
+}
+.card-header{
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2a2f2f;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+
+}
+.top{
+    margin-top: 40px;
+    border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  
+}

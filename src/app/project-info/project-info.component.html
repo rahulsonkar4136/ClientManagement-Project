@@ -1,0 +1,43 @@
+<div class="bca">
+<app-nav></app-nav>
+
+
+<div class="container">
+    <div class="btnpos">
+    <button class="btn btn-success" (click)="openForm()">New Project</button>
+</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Project ID</th>
+          <th>Project Name</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let project of projects">
+          <td>{{ project.id }}</td>
+          <td>{{ project.name }}</td>
+          <td>{{ project.duration }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="form-container" *ngIf="isFormOpen">
+      <form (ngSubmit)="addProject()">
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="text" name="pid" class="form-control" id="id" [(ngModel)]="project.id" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="Pname" class="form-control" id="name" [(ngModel)]="project.name" required>
+        </div>
+        <div class="form-group">
+          <label for="duration">Duration:</label>
+          <input type="text" name="pdura" class="form-control" id="duration" [(ngModel)]="project.duration" required>
+        </div>
+        <button type="submit" class="btn btn-success">Add Project Button</button>
+      </form>
+    </div>
+  </div>
+</div>

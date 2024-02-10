@@ -1,0 +1,40 @@
+
+.bca
+{
+    background-image: url('https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=600'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.card-header{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #2a2f2f;
+  color: rgb(255, 255, 255);
+
+}
+.card {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(42, 40, 40, 0.1);
+  background-color: #a3e0db;
+  color: rgb(255, 255, 255);
+}
+
+
+  
+.card-title {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+  
+  .btn-primary {
+    width: 100%;
+  }
+  
+

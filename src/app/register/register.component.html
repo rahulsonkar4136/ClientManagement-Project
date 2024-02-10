@@ -1,0 +1,34 @@
+<div class="bca">
+  
+    <div class="card">
+      <div class="card-body">
+        <div class="card-header">
+          <b>Register Here</b>
+      </div>
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" required>
+          </div>
+          
+          <div class="form-group">
+           <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="email">
+          </div>
+          
+          <div class="form-group">
+            <label for="Phone Number">Phone Number</label>
+            <input type="tel" class="form-control" id="pnumber" [(ngModel)]="pnumber" pattern="[8-9]{3}-[0-9]{8,9}" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="password" required>
+          </div>
+          
+          <input type="submit"  value="Register" class="btn btn-success" (click)="alldetails()"/>
+        </form>
+     
+    
+  </div>
+</div>

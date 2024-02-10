@@ -1,0 +1,89 @@
+
+
+
+  <!--<div class="container">
+    <button class="btn btn-primary" (click)="openForm()">Create Meeting</button>
+    <div class="form-container" *ngIf="isFormOpen">
+      <form (ngSubmit)="addMeeting()">
+        
+      </form>
+    </div>
+    
+    <table class="table mt-5" *ngIf="meetings.length > 0">
+      <thead>
+        <tr>
+          <th>Meeting ID</th>
+          <th>Start Date & Time</th>
+          <th>Topic</th>
+          <th>Client Name</th>
+          <th>No. of Persons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let meeting of meetings">
+          <td>{{ meeting.id }}</td>
+          <td>{{ meeting.startDateTime | date: 'short' }}</td>
+          <td>{{ meeting.topic }}</td>
+          <td>{{ getClientName(meeting.clientId) }}</td>
+          <td>{{ meeting.noOfPersons }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>-->
+  <div class="bca">
+  <app-nav></app-nav>
+  
+  <div class="container">
+    <button class="btn btn-success" (click)="openForm()">Create Meeting</button>
+    
+    <table class="table">
+      <thead>
+        <tr>
+            <th>Meeting ID</th>
+            <th>Start Date & Time</th>
+            <th>Topic</th>
+            <th>Client Name</th>
+            <th>No. of Persons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let meeting of meetings">
+            <td>{{ meeting.meetingid }}</td>
+            <td>{{ meeting.startDateTime | date: 'short' }}</td>
+            <td>{{ meeting.topic }}</td>
+            <td>{{ getClientName(meeting.clientId) }}</td>
+            <td>{{ meeting.noOfPersons }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="form-container" *ngIf="isFormOpen">
+        <form (ngSubmit)="addMeeting()">
+    <div class="form-group">
+        <label for="meetingId">Meeting ID:</label>
+        <input type="text" class="form-control"name="id" id="meetingId" [(ngModel)]="meeting.meetingid" required>
+      </div>
+      <div class="form-group">
+        <label for="startDateTime">Start Date & Time:</label>
+        <input type="datetime-local" class="form-control"name="date" id="startDateTime" [(ngModel)]="meeting.startDateTime" required>
+      </div>
+      <div class="form-group">
+        <label for="topic">Meeting Topic:</label>
+        <input type="text" class="form-control" name="topic" id="topic" [(ngModel)]="meeting.topic" required>
+      </div>
+      <div class="form-group">
+        <label for="client">Client Name:</label>
+        <select class="form-control" name="name" id="client" [(ngModel)]="meeting.clientId" required>
+          <option *ngFor="let client of clients" [value]="client.id">{{ client.name }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="noOfPersons">No. of Persons:</label>
+        <input type="number" class="form-control" name="npo" id="noOfPersons" [(ngModel)]="meeting.noOfPersons" required>
+      </div>
+      <button type="submit" class="btn btn-success">Add Meeting</button>
+    </form>
+  </div>
+  </div>
+</div>

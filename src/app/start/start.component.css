@@ -1,0 +1,76 @@
+.bca
+{
+    background-image: url('https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=600'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', serif, sans-serif; 
+    color: #25c72b;
+    height: 100vh;
+}
+.abc
+{
+    margin-top: 500px;
+    width: 100%;
+}
+.ha
+{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    font-size: 50px; 
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform:translateX(-50%);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(139, 86, 209),0 0 20px rgb(24, 24, 24);
+  
+}
+.ha2
+{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    font-size: 50px; 
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform:translateX(-50%);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(139, 86, 209),0 0 20px rgb(24, 24, 24);
+}
+.im
+{   position: absolute;
+    top: 30%;
+    left: 30%;
+    transform:translateX(-50%); 
+}
+.bu
+{   position: absolute;
+    top: 55%;
+    left: 80%;
+    transform:translateX(-50%); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    height: 25px;
+    background-color: rgb(164, 235, 110);
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(29, 99, 115);
+    color: rgb(139, 86, 209);
+}
+
+.bu:hover{
+    box-shadow: 0 0 5px rgba(243, 240, 237, 0.916),
+    0 0 25px rgb(212, 208, 205),0 0 50px rgb(229, 229, 226);
+}

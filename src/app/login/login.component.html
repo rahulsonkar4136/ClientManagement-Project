@@ -1,0 +1,43 @@
+<div class="bca">
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-head">
+            <div class="card-header">
+                <b>Login Here</b>
+            </div>
+        </div>
+            <div class="card-body">
+                <form #frmLogin="ngForm" (ngSubmit)="UserCheck()">
+                <label>Username</label>
+                <input type="text" [(ngModel)]="username" 
+                name="usrname" placeholder="User name" 
+                class="form-control"  #uname="ngModel" required/>
+                 
+                <span class="error" *ngIf="uname.touched && uname.invalid">
+                    Username should not be blank
+                </span>
+  
+                 <br />
+                 <label>Password</label>
+                <input type="password" [(ngModel)]="pswrd" 
+                placeholder="Password" class="form-control"
+                name="pswrd" #pwd="ngModel"  required />
+                <span class="error"  *ngIf="pwd.touched && pwd.invalid">
+                    Password Should not be blank
+                </span>
+                <br />
+                <input type="submit"  value="Click Me" class="btn btn-success"/> &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <input type="submit"  value="Register" class="btn btn-success" (click)="OnRegister()"/>
+                <br /><br />
+                <div [innerHTML]="msg" style="color:red;font-weight: bold;"></div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  
+</div>
